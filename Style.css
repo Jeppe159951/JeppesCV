@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: sans-serif;
+}
+.print-area{
+    width: 90%;
+    margin: 20px auto;
+}
+.print-area .header{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(31, 34, 43);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header img{
+    width: 200px;
+    height: 175px;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 75px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10p rgb(0,0,0,.5);
+    cursor:pointer;
+    transition-duration: .5s;
+    user-select: none;
+    filter:grayscale(100%);
+}
+.header img:hover{
+    filter: grayscale(0%);
+    transform: scale(1,05);
+    box-shadow: 3px 3px 10p rgb(0, 0,0, .5);
+}
+.header-text{
+    color:rgb(245, 240, 240);
+    width: 60%;
+    margin-left:auto;
+}
+.header-text h1{
+    font-size: 50px;
+    font-weight: normal;
+    text-align: left;
+}
+.header-text p{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;   
+}
+.left-area{
+    width: 35%;
+    background-color: rgb(208, 218, 203);
+    text-align: center;
+    padding-bottom: 20px;
+}
+.left-area .contact{
+    margin-top: 120px;
+    padding: 20px;
+}
+.contact h4{
+    font-size: 30px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+.contact h5{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.contact p{
+    font-size: 17px;   
+}
+.left-area .fritid{
+    margin-top: 20px;
+    padding: 20px;
+}
+.fritid h4{
+    font-size: 30px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+.fritid h5{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.kompetencer{
+    margin-top: 20px;
+}
+.Kompetencer h1{
+    font-size: 25px;
+    font-weight: normal;
+}
+.bars{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 10px;
+    padding: 0 10px;
+}
+.bars .bar p{
+    font-size: 10px;
+    font-weight: bold;
+}
+.bar span{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: gray;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.bar span::before{
+    position: absolute;
+    content:"";
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+.follow{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.follow h4{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.follow p{
+    font-size: 10px;
+    color: gray;
+}
+
+.right-area{
+    width: 65%;
+    padding: 20px;
+}
+.right-area h1{
+    font-size: 25px;
+    font-weight: normal;
+}
+.right-area p{
+    padding-left: 40px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 17px;
+    color: gray;
+    margin-top: 10px;
+}
+.work{
+    margin-top: 20px;
+}
+.work-group{
+    margin: 20px 0;
+}
+.work .work-group{
+    position:relative;
+}
+.work-group h3{
+    font-size: 22px;
+    font-weight: normal;
+    padding-left: 25px;
+}
+.work-group h4{
+    font-size: 18px;
+    padding-left: 30px;
+    font-weight: normal;
+    color: black;
+}
+.work-group p{
+    padding-left: 30px;
+}
+.work-group span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+.education{
+    margin-top: 20px;   
+}
+.edu-group{
+    position:relative;
+    margin: 10px 0;
+}
+.edu-group h4{
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: normal;
+}
+.edu-group span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color:black;
+    font-weight: bold;
+    font-size:15px;
+}
+.edu-group p{
+    padding-left: 30px;
+}
+.frivilligt{
+    margin: 20px 0;
+}
+.frivilligt .work-group{
+    position:relative;
+}
+.frivilligt h3{
+    font-size: 22px;
+    font-weight: normal;
+    padding-left: 30px;
+}
+.frivilligt h4{
+    font-size: 18px;
+    padding-left: 35px;
+    font-weight: normal;
+    color: black;
+}
+.frivilligt p{
+    padding-left: 30px;
+}
