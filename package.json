@@ -1,0 +1,12 @@
+{
+  "name": "bankaktier",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node Bankaktier.js"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.7",
+    "dotenv": "^16.0.0"
+  }
+}

@@ -11,18 +11,19 @@
 .print-area .header{
     width: 100%;
     height: 150px;
-    background-color: rgb(31, 34, 43);
+    background-color: #032c59;
     display: flex;
     align-items: center;
     position: relative;
 }
-.header img{
+.left-area img{
+    margin-bottom: 15px;
+    margin-top: 15px;
     width: 200px;
     height: 175px;
     border-radius: 50%;
-    position: absolute;
     top: 100px;
-    left: 75px;
+    left: 110px;
     border: 5px solid white;
     box-shadow: 3px 3px 10p rgb(0,0,0,.5);
     cursor:pointer;
@@ -32,36 +33,51 @@
 }
 .header img:hover{
     filter: grayscale(0%);
-    transform: scale(1,05);
     box-shadow: 3px 3px 10p rgb(0, 0,0, .5);
 }
 .header-text{
     color:rgb(245, 240, 240);
-    width: 60%;
+    width: 100%;
+    text-align: center;
     margin-left:auto;
+    margin-right: auto;
+    display: block;
 }
 .header-text h1{
     font-size: 50px;
     font-weight: normal;
-    text-align: left;
+    /* text-align: left; */
 }
 .header-text p{
     font-size: 20px;
     color: rgb(255, 255, 255);
-    text-align: left;
+    /* text-align: left; */
 }
 .content{
     display: flex;
     flex-wrap: wrap;   
 }
+
+img.linkedin {
+    border-radius: unset;
+    width: unset;
+    height: 200px;
+    filter: unset;
+    border: unset;
+    cursor: pointer;
+}
+
+.left-area h2 {
+    margin-bottom: 15px;
+}
 .left-area{
     width: 35%;
-    background-color: rgb(208, 218, 203);
+    background-color: #efefef;
     text-align: center;
     padding-bottom: 20px;
 }
 .left-area .contact{
-    margin-top: 120px;
+ 
     padding: 20px;
 }
 .contact h4{
@@ -92,7 +108,7 @@
 .kompetencer{
     margin-top: 20px;
 }
-.Kompetencer h1{
+.Kompetencer h2{
     font-size: 25px;
     font-weight: normal;
 }
@@ -145,14 +161,13 @@
     width: 65%;
     padding: 20px;
 }
-.right-area h1{
+.right-area h2{
     font-size: 25px;
     font-weight: normal;
+    margin-left: 10px;
 }
 .right-area p{
-    padding-left: 40px;
-    text-align: justify;
-    word-break: break-all;
+    /* text-align: justify; */
     font-size: 17px;
     color: gray;
     margin-top: 10px;
@@ -177,9 +192,7 @@
     font-weight: normal;
     color: black;
 }
-.work-group p{
-    padding-left: 30px;
-}
+
 .work-group span{
     position: absolute;
     top: 10px;
@@ -202,14 +215,15 @@
 }
 .edu-group span{
     position: absolute;
-    top: 10px;
+    top: 17px;
     right: 0;
     color:black;
     font-weight: bold;
     font-size:15px;
+    margin-bottom: 10px;
 }
 .edu-group p{
-    padding-left: 30px;
+    /* padding-left: 30px; */
 }
 .frivilligt{
     margin: 20px 0;
@@ -231,3 +245,57 @@
 .frivilligt p{
     padding-left: 30px;
 }
+.right-area svg {
+    font-size: 40px;
+}
+
+
+.linje {
+    display: flex;
+    align-items: center;
+}
+
+.right-area p {
+    margin-left: 55px;
+}
+.bank-aktie {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .bank-aktie h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  
+  .data-table {
+    border-collapse: collapse;
+  }
+  
+  .data-table th,
+  .data-table td {
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+  }
+
+  .årgang {
+    float: right;
+    font-weight: 600;
+  }
+
+
+  @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (max-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+    .left-area{
+        width: 100%;
+    }
+    .right-area {
+        width: 100%;
+    }
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
